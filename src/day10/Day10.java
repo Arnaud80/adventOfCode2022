@@ -56,7 +56,29 @@ public class Day10 {
                 System.out.println("On cycle " + i + " signal strength = " + i * cyclesResults.get(i - 2)); // Pourquoi -2 ?
             }
             System.out.println("On total signal strength = " + total);
-        } finally {
+
+            char[][] CRTline = new char[6][40];
+            int line = 0;
+            for(int i:List.of(40, 80, 120, 160, 200, 240)) {
+                for(int j = 0 ; j < i - line * 40; j++) {
+                    int intCycle = line * 40 + j;
+                    int posSprite = cyclesResults.get(intCycle) - 1;
+                    if((intCycle - line * 40) >= posSprite - 1 && (intCycle - line * 40) <= posSprite + 1) CRTline[line][j] = '#';
+                    else CRTline[line][j] = '.';
+                }
+                line++;
+            }
+
+            line=0;
+            for(int i:List.of(40, 80, 120, 160, 200, 240)) {
+                for(int j = 0 ; j < i - line * 40; j++) {
+                    System.out.print(CRTline[line][j]);
+                }
+                System.out.println("");
+                line++;
+            }
+
+                } finally {
             if(service!=null) service.shutdown();
         }
     }
