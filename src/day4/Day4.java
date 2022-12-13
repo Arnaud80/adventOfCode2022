@@ -7,7 +7,7 @@ import java.util.ArrayList;
 
 public class Day4 {
     public static void main(String[] args) throws IOException{
-        ArrayList<String> lines = new InputFileReader("ressources/day4.txt").getLines();
+        ArrayList<String> lines = new InputFileReader("resources/day4.txt").getLines();
 
         System.out.println("FullOverlap : " + lines.stream().filter(line -> fullOverlap(line)).count());
         System.out.println("Overlap : " + lines.stream().filter(line -> overlap(line)).count());

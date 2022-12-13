@@ -8,7 +8,7 @@ import java.util.*;
 
 public class Day7 {
     public static void main(String... args) throws IOException {
-        ArrayList<String> lines = new InputFileReader("ressources/day7.txt").getLines();
+        ArrayList<String> lines = new InputFileReader("resources/day7.txt").getLines();
         TreeNode tree = new TreeNode("/");
 
         TreeNode currentFolder = tree;

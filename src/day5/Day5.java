@@ -9,7 +9,7 @@ import java.util.Stack;
 
 public class Day5 {
     public static void main(String[] args) throws IOException{
-        ArrayList<String> lines = new InputFileReader("ressources/day5.txt").getLines();
+        ArrayList<String> lines = new InputFileReader("resources/day5.txt").getLines();
 
         int qtyOfStack=9;
         HashMap<Integer, Integer> posCharToStack = new HashMap<>();

@@ -8,7 +8,7 @@ import java.util.*;
 public class Day3 {
     public static void main(String[] args) {
         try {
-            File file = new File("ressources/day3.txt");
+            File file = new File("resources/day3.txt");
             FileReader fileReader = new FileReader(file);
             BufferedReader bufferedReader = new BufferedReader(fileReader);
             String line;

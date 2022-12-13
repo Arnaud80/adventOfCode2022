@@ -8,7 +8,7 @@ import java.util.HashSet;
 
 public class Day6 {
     public static void main(String[] args) throws IOException{
-        ArrayList<String> lines = new InputFileReader("ressources/day6.txt").getLines();
+        ArrayList<String> lines = new InputFileReader("resources/day6.txt").getLines();
 
         String message = lines.get(0);
         char[] charsMessage = message.toCharArray();

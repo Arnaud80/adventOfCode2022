@@ -8,7 +8,7 @@ import java.util.Collections;
 
 public class Day8 {
     public static void main(String... args) throws IOException {
-        ArrayList<String> lines = new InputFileReader("ressources/day8.txt").getLines();
+        ArrayList<String> lines = new InputFileReader("resources/day8.txt").getLines();
         Integer width = lines.get(0).length();
         Integer length = lines.size();
         Integer[][] tableTree = new Integer[width][length];

@@ -8,7 +8,7 @@ import java.util.ArrayList;
 public class Day2 {
     public static void main(String[] args) {
         try {
-            File file = new File("ressources/day2.txt");
+            File file = new File("resources/day2.txt");
             FileReader fileReader = new FileReader(file);
             BufferedReader bufferedReader = new BufferedReader(fileReader);
             String line;

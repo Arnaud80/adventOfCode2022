@@ -8,7 +8,7 @@ import java.util.Collections;
 
 public class Day1 {
     public static void main(String[] args) {
-        File file = new File("ressources/day1.txt");
+        File file = new File("resources/day1.txt");
         FileReader fileReader;
         BufferedReader bufferedReader;
 
